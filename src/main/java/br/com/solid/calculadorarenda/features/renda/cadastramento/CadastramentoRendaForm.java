@@ -1,21 +1,21 @@
 package br.com.solid.calculadorarenda.features.renda.cadastramento;
 
-import java.math.BigDecimal;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import br.com.solid.calculadorarenda.contracts.Form;
-import lombok.EqualsAndHashCode;
-import lombok.Value;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Value
-@EqualsAndHashCode(callSuper = false)
+@Getter
+@Setter
+@NoArgsConstructor
 class CadastramentoRendaForm extends Form {
 
-	@JsonProperty("nome_pessoa")
-	String nomePessoa;
+	@JsonProperty("valor")
+	private String renda;
 
-	@JsonProperty("renda")
-	BigDecimal renda;
+	@JsonProperty("nome_pessoa")
+	private String nomePessoa;
 
 }
