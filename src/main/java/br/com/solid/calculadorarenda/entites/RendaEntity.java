@@ -1,4 +1,4 @@
-package br.com.solid.calculadorarenda.entities;
+package br.com.solid.calculadorarenda.entites;
 
 import java.math.BigDecimal;
 

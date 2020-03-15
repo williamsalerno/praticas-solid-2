@@ -5,11 +5,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.solid.calculadorarenda.contracts.PostControllerContract;
+import br.com.solid.calculadorarenda.templates.controller.PostControllerTemplate;
 
 @RestController
 @RequestMapping("/v1/cadastro")
-class CadastramentoRendaController implements PostControllerContract<CadastramentoRendaForm, CadastramentoRendaView> {
+class CadastramentoRendaController implements PostControllerTemplate<CadastramentoRendaForm, CadastramentoRendaView> {
 
 	@Autowired
 	private CadastramentoRendaService cadastramentoRendaService;

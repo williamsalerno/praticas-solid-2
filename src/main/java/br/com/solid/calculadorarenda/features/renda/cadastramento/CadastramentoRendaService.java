@@ -3,7 +3,7 @@ package br.com.solid.calculadorarenda.features.renda.cadastramento;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import br.com.solid.calculadorarenda.entities.RendaEntity;
+import br.com.solid.calculadorarenda.entites.RendaEntity;
 import br.com.solid.calculadorarenda.features.renda.RendaService;
 
 @Component
